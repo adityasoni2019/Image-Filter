@@ -1,0 +1,105 @@
+<!-- START FROM 6:40   -->
+<!-- THE LAST THING I WAS STUCK AT IS THE ICON ADDING THING. COULDN'T ADD THOSE -->
+
+<!-- YOUTUBE LINK - https://www.youtube.com/watch?v=YqUUvBpCtfA&list=PLpwngcHZlPadhRwryAXw3mJWX5KH3T5L3 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Not really sure if I should add this. -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- This is how we add the css file in HTML  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- This is the main div -->
+    <div class="container">
+
+        <!-- This is the top block, which contains just the text -->
+        <div class="top">
+            <h1>
+               Easy Image Filter
+            </h1>   
+        </div>
+    
+
+        <!-- This is the middle box, which has all the main elements-->
+        <div class="middle">
+            
+            <!-- Milddle box 1 / Or the editor-panel -->
+            <div class="middle-block1">
+                
+                <!-- Filter -->
+                <div class="filter">
+                    <!-- Some text  -->
+                    <label for="" class="title">Filter</label>
+                    
+                    <!-- 4 buttons -->
+                    <div class="options">
+                        <button id = "brightness" class="active">Brightness</button>
+                        <button id = "saturation">Saturation</button>
+                        <button id = "inversion">Inversion</button>
+                        <button id = "grayscale">Grayscale</button>
+                    </div>
+                    
+                    <!-- Slider -->
+                    <div class="slider">
+                        <div class="filter-info">
+                            <p class="name">Brightness</p>
+                            <p class="value">100%</p>
+                        </div>
+                        
+                        <input type="range" value="100" max="200" min = "0">
+                    </div>
+                </div>
+
+                <!-- Rotate -->
+                <div class="rotate">
+                    <!-- some text -->
+                    <lable class="title">Rotate & Flip </lable>
+                    
+                    <!-- 4 buttons icons -->
+                    <div class="options">
+                        <button id="left"><i class="fa fa-rotate-left"></i></button>
+                        <button id="right"><i class="fa fa-rotate-right"></i></button>
+                        <button id="horizontal"><i class='bx bx-reflect-vertical'></i></button>
+                        <button id="vertical"><i class='bx bx-reflect-horizontal' ></i></button>
+                    </div>
+              </div>
+            </div>
+            
+            <!-- Milddle box 2 -->
+            <div class = "middle-block2">
+
+                <!-- Contains the image of the thing -->
+                <img src="https://cdn.dribbble.com/users/1774675/screenshots/8297994/media/8fe64f17312e2d19b8231185e78c7a4f.gif">
+                <!-- <img src="https://www.csschopper.com/blog/wp-content/uploads/2014/08/PlaceHolder-Image-Tool.jpg" alt="Image not loaded."> -->
+
+            </div>
+
+        </div>
+
+        <!-- This is the bottom box, which contains the bottom buttons-->
+        <div class="bottom">
+            <button class="reset-filters">Reset filters</button>
+            <div class="row">
+                <input type="file" class = "file-input" accept="image/*" hidden> 
+                <!-- This reason why the above input is hidden is, because it had this crappy button coming along with it, which we didn't want.-->
+                
+                <button class="choose-image">Choose image</button>
+                <button class="save-image">Save image</button>
+            </div>
+        </div>
+    </div>
+
+    <script src= "script.js"></script>
+</body>
+</html>
